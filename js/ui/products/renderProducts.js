@@ -2,6 +2,7 @@ export function renderProducts(products){
     const htmlProducts = products.map(createProduct);
     console.log("html products", htmlProducts);
     const productContainer = document.querySelector("#container");
+    productContainer.innerHTML = "";
     productContainer.append(...htmlProducts)
 }
 
@@ -10,7 +11,7 @@ function createProduct(product) {
     div.className = "products";
     const title = document.createElement("h2")
     title.textContent = product.name;
-    div.appendChild(title);
+    div.append(title);
     return div;
 
 }
