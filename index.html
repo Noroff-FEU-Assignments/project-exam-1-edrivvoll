@@ -6,8 +6,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="js/ui/index.js" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5e248e42c9.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="container">Loading...</div>
+    <header>
+      <a href="#"><img src="#" alt="Blog logo" class="header_logo" /></a>
+      <input type="checkbox" id="nav_checkbox" />
+      <label for="nav_checkbox" aria-labelledby="nav_checkbox">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="/blog_posts.html">Blogs</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="container"></div>
+    </main>
+    <footer>
+      <p>Copyright &copy;</p>
+    </footer>
   </body>
 </html>
