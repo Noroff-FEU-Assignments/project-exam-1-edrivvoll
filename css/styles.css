@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Scriptina_pro";
+    src: url(../Fonts/Scriptina\ Pro.otf);
+}
+
+
+
 .message {
     padding: 1rem;
 
@@ -18,7 +25,8 @@
 }
 
 body {
-    background-color: rgb(109, 153, 153);
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif, Arial, Helvetica;
     margin: 0;
 }
 
@@ -46,6 +54,13 @@ header {
     padding-right: 1%;
 }
 
+#logo-name {
+    font-family: "Scriptina_pro";
+    text-decoration-line: underline;
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
 
 
 .fa-bars {
@@ -60,6 +75,32 @@ header {
     cursor: pointer;
 }
 
+.hero-pic {
+    background-image: url(../img/herocake.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    background-blend-mode: color;
+    height: 40em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;
+    text-align: left;
+    font-size: ;
+}
+
+h1 {
+    padding-left: 10%;
+
+}
+
+h1 span {
+    font-family: "Scriptina_pro";
+    text-decoration-line: underline;
+    font-size: 2em;
+
+}
 
 
 footer {
@@ -77,9 +118,10 @@ nav,
     position: absolute;
     right: 0;
     top: 5em;
-    width: 50%;
+    width: 30%;
     height: 400%;
-    background-color: #f5c6cb;
+    background-color: #816262;
+
 }
 
 nav a {
@@ -90,8 +132,24 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav li {}
+nav li {
+    list-style-type: none;
+    margin: 30px;
+    font-size: 1.5em;
+}
 
+nav {
+    align-content: center;
+    margin: 0 auto;
+}
+
+nav li a {
+    padding: 10px;
+}
+
+nav ul {
+    padding: 3%;
+}
 
 
 #nav_checkbox:checked~nav {
