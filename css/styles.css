@@ -44,7 +44,7 @@ body {
     justify-content: start;
     left: 0;
     top: 0;
-    transition: 0.4 ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .item {
