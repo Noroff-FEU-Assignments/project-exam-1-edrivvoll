@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Cake Haven</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/ui/index.js" type="module" defer></script>
+    <!-- <script src="js/ui/carousel.js" defer></script> -->
     <script
       src="https://kit.fontawesome.com/5e248e42c9.js"
       crossorigin="anonymous"></script>
@@ -35,6 +36,24 @@
       <div class="hero-pic" id="hero-pic">
         <h1>Welcome to <span>Cake Haven</span></h1>
       </div>
+      <div class="slider-container">
+        <div class="slider-width">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+          <div class="item">6</div>
+          <div class="item">7</div>
+          <div class="item">8</div>
+          <div class="item">9</div>
+          <div class="item">0</div>
+          <div class="item">11</div>
+          <div class="item">12</div>
+        </div>
+      </div>
+      <button type="button" class="btn" onclick="prev()">Prev</button>
+      <button type="button" class="btn" onclick="next()">Next</button>
       <div id="container"></div>
     </main>
     <footer>
