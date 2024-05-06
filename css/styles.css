@@ -3,6 +3,15 @@
     src: url(../Fonts/Scriptina\ Pro.otf);
 }
 
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url(../Fonts/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bai Jamjuree bold";
+    src: url(../Fonts/BaiJamjuree-Bold.ttf);
+}
 
 
 .message {
@@ -31,10 +40,19 @@ body {
     padding: 0;
 }
 
+.blog-h1 {
+    font-family: "Bai Jamjuree bold";
+    padding: 60px 60px 0 60px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
 .slider-container {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 300px;
+
+
 }
 
 .slider-width {
@@ -47,9 +65,14 @@ body {
     transition: 0.8s ease-in-out;
 }
 
+.btn-container {
+    text-align: center;
+
+}
+
 .item {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     margin: 0 10px;
     text-align: center;
     font-size: 20px;
@@ -64,7 +87,7 @@ body {
     border: none;
     outline: none;
     color: #0e0f0e;
-    font-size: 20px;
+    font-size: 40px;
     margin: 20px;
     padding: 6px 12px;
     cursor: pointer;

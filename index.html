@@ -36,13 +36,15 @@
       <div class="hero-pic" id="hero-pic">
         <h1>Welcome to <span>Cake Haven</span></h1>
       </div>
+      <h1 class="blog-h1">Recent Blog Posts:</h1>
       <div
         class="slider-container"
-        item-display-d="4"
-        item-display-t="3"
-        item-display-m="1">
+        item-display-4="4"
+        item-display-3="3"
+        item-display-2="2"
+        item-display-1="1">
         <div class="slider-width">
-          <div class="item">1</div>
+          <!-- <div class="item">1</div>
           <div class="item">2</div>
           <div class="item">3</div>
           <div class="item">4</div>
@@ -56,12 +58,17 @@
           <div class="item">12</div>
           <div class="item">13</div>
           <div class="item">14</div>
-          <div class="item">15</div>
+          <div class="item">15</div> -->
         </div>
       </div>
-
-      <button type="button" class="btn" onclick="prev()">Prev</button>
-      <button type="button" class="btn" onclick="next()">Next</button>
+      <div class="btn-container">
+        <button type="button" class="btn" onclick="prev()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button type="button" class="btn" onclick="next()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
       <div id="container"></div>
     </main>
     <footer>

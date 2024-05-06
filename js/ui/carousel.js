@@ -1,32 +1,30 @@
-var count =0;
-var inc = 0;
-var margin = 0;
-var slider = document.getElementsByClassName("slider-width")[0];
-var itemDisplay = 0;
+let count =0;
+let inc = 0;
+let margin = 20;
+let slider = document.getElementsByClassName("slider-width")[0];
+let itemDisplay = 0;
 console.log(document.body.scrollWidth)
-if(document.body.scrollWidth > 990){
-    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-d");
-    margin = itemDisplay * 5;
+if(document.body.scrollWidth > 1600){
+    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-4");
 }
-if(document.body.scrollWidth > 700 && document.body.scrollWidth < 990){
-    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-t");
-    margin = itemDisplay * 6.8;
+if(document.body.scrollWidth > 1200 && document.body.scrollWidth < 1600){
+    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-3");
+}
+if(document.body.scrollWidth > 700 && document.body.scrollWidth < 1200){
+    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-2");
 }
 if(document.body.scrollWidth > 280 && document.body.scrollWidth < 700){
-    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-m");
-    margin = itemDisplay * 20;
+    itemDisplay = document.getElementsByClassName("slider-container")[0].getAttribute("item-display-1");
 }
-console.log("cards displayed " + itemDisplay)
 
-var item = document.getElementsByClassName("item");
-var itemleft = item.length % itemDisplay;
-var itemSlide = Math.floor(item.length / itemDisplay) - 1;
-console.log("item slide = " + itemSlide)
-console.log(item[0])
+let item = document.getElementsByClassName("item");
+let itemleft = item.length % itemDisplay;
+let itemSlide = Math.floor(item.length / itemDisplay) - 1;
+
 
 for(let i=0; i<item.length; i++){
     item[i].style.width = (document.body.scrollWidth / itemDisplay) - margin + "px";
-    console.log([i])
+    
 }
 
 
@@ -42,7 +40,7 @@ function next(){
         }
     }
     slider.style.left =  count + "px";
-    console.log(count);
+   
 } 
 function prev(){
     if(inc !== 0){
@@ -56,5 +54,5 @@ function prev(){
         }
     }
     slider.style.left =  count + "px";
-    console.log(count);
+
 }
