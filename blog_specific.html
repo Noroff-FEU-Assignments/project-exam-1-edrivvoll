@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cake Haven | Resist the temptation." />
+    <title>Cake Haven</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5e248e42c9.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" id="logo"
+        ><i class="fa-solid fa-cake-candles"></i
+      ></a>
+      <a href="/index.html" id="logo-name">Cake Haven</a>
+      <input type="checkbox" id="nav_checkbox" />
+      <label for="nav_checkbox" aria-labelledby="nav_checkbox">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav>
+        <ul>
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="/blog_posts.html">Blogs</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="blog-post"></div>
+      <script src="js/logic/products/getBlgPost.js" type="module"></script>
+    </main>
+    <footer>
+      <p>Copyright &copy;</p>
+    </footer>
+  </body>
+</html>

@@ -1,15 +1,4 @@
 import { base_url } from "../../constants/api.js";
-/* &per_page=100&populate=* */
-
-
-
-
-
-
-
-
-
-
 
 export async function renderPost(){
     const response = await fetch(base_url + "?_embed&per_page=100");
@@ -20,10 +9,16 @@ export async function renderPost(){
     console.log(json.length)
     
     json.forEach(json => {
-        
         let imgUrl = json._embedded['wp:featuredmedia']['0'].source_url;
         card.innerHTML += `
-        <div class="item" style="background-image: url(${imgUrl})"><h2>${json.title.rendered}</div>
+        <a href="blog_specific.html?id=${json.id}">
+        <div class="item" style="background-image: url(${imgUrl})">
+            <h2>${json.title.rendered}</h2> 
+            <div class="hover">
+                <p>${json.excerpt.rendered}</p>
+            </div> </a>       
+        </div>
+        
         `;
         
     });
