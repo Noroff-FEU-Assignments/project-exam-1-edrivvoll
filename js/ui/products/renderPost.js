@@ -1,31 +1,64 @@
 import { base_url } from "../../constants/api.js";
+/* &per_page=100&populate=* */
+
+
+
+
+
+
+
+
+
 
 
 export async function renderPost(){
-    const response = await fetch(base_url + "?_embed&per_page=100&populate=*");
+    const response = await fetch(base_url + "?_embed&per_page=100");
     const json = await response.json();
     
-    const card = document.querySelector(".slider-width");
-    
+    const card = document.querySelector(".slider");
+    const item = document.querySelector(".item");
     console.log(json.length)
     
-    for(let i = 0; i < json.length; i++){
-        console.log(json[i].title.rendered)
-        card.innerHTML += `
-        <div class="item">${json[i].title.rendered}</div>
+    json.forEach(json => {
         
+        let imgUrl = json._embedded['wp:featuredmedia']['0'].source_url;
+        card.innerHTML += `
+        <div class="item" style="background-image: url(${imgUrl})"><h2>${json.title.rendered}</div>
         `;
-        console.log("link : " + json._links["wp:attachment"][0].href);
-        /* let bgImg = document.getElementsByClassName("item").style.backgrund-image;
-        bgImg = json[1]._link["wp:attachment"][0].href;
-        console.log(bgImg); */
-    }
+        
+    });
+        
+        
 
+ };
+        
+        
+
+        
     
-}
+
+
+       
+        
+    
+    
+    
+
+ 
+
+/* 
+featured_media_scr_url
+
+
+console.log("link : " + json._links["wp:attachment"][0].href);
+        console.log("link : " + card._embedded['wp:featuredmedia']['0'].source_url);
+        let bgImg = document.getElementsByClassName("item").style.backgrund-image;
+        bgImg = json[1]._link["wp:attachment"][0].href;
+        console.log(bgImg);
 
 
 
+${json[i].title.rendered} */
 
 
 

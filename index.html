@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake Haven</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/ui/index.js" type="module" defer></script>
-    <script src="js/ui/carousel.js" defer></script>
+
     <script
       src="https://kit.fontawesome.com/5e248e42c9.js"
       crossorigin="anonymous"></script>
@@ -37,23 +36,70 @@
         <h1>Welcome to <span>Cake Haven</span></h1>
       </div>
       <h1 class="blog-h1">Recent Blog Posts:</h1>
-      <div
-        class="slider-container"
-        item-display-4="4"
-        item-display-3="3"
-        item-display-2="2"
-        item-display-1="1">
-        <div class="slider-width"></div>
+      <div class="slider-container">
+        <div class="slider"></div>
+        <button class="prev-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="next-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="btn-container">
+      <!-- <div class="btn-container">
         <button type="button" class="btn" onclick="prev()">
           <i class="fa-solid fa-arrow-left"></i>
         </button>
         <button type="button" class="btn" onclick="next()">
           <i class="fa-solid fa-arrow-right"></i>
         </button>
-      </div>
+      </div> -->
       <div id="container"></div>
+
+      <!-- <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herocake.jpg" alt="Image 2" />
+          </div> -->
+
+      <!-- Add more carousel items for a total of 12 -->
+      <!-- </div>
+        
+      </div> -->
+      <script src="js/ui/index.js" type="module"></script>
+      <script src="js/ui/carousel.js"></script>
     </main>
     <footer>
       <p>Copyright &copy;</p>
