@@ -20,25 +20,13 @@ async function getBlogPost(){
     blogPost.innerHTML = "";
     blogPost.innerHTML = `
         <div class="blog_featured_img" style="background-image: url(${featImg})"></div>
+        <div class="blog-spesific-container">
         <h1 class="blog-post-h1">${json.title.rendered}</h1>
         <p class="blog-post-p">${json.content.rendered}</p>
-    
+        </div>
     
     
     `
 }
 
 getBlogPost();
-
-
-/* 
-
-
-
-
-console.log(json.title);
-console.log(base_url)
-
-
-
-*/

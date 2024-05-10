@@ -9,6 +9,22 @@
     <script
       src="https://kit.fontawesome.com/5e248e42c9.js"
       crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://squareeyes-edrivvoll.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3814027, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
@@ -22,7 +38,7 @@
       </label>
       <nav>
         <ul>
-          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="/blog_posts.html">Blogs</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li><a href="/about.html">About</a></li>
@@ -30,7 +46,18 @@
       </nav>
     </header>
     <main>
-      <div class="blog-post"></div>
+      <div class="blog-post">
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <script src="js/logic/products/getBlgPost.js" type="module"></script>
     </main>
     <footer>
