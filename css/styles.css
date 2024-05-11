@@ -750,4 +750,8 @@ img {
         max-width: 80%;
 
     }
+
+    #contact-form {
+        width: 80%;
+    }
 }
