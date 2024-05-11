@@ -222,6 +222,10 @@ footer {
 
 }
 
+.item a {
+    text-decoration: none;
+}
+
 .item h2 {
     position: relative;
     display: flex;
@@ -230,7 +234,7 @@ footer {
     padding: 5px 0;
     width: 90%;
     text-align: center;
-
+    z-index: 1;
     top: 230px;
     margin: auto;
     color: aliceblue;
