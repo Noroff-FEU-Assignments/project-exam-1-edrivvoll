@@ -306,16 +306,6 @@ footer {
     background-size: cover;
 }
 
-
-
-
-
-
-
-
-
-
-
 .top-img-blog {
     background-image: url(/img/topimgblog.jpg);
 }
@@ -598,6 +588,59 @@ footer {
 }
 
 /* Loading wheel END */
+img {
+    transition: 0.3s all ease-in-out;
+
+}
+
+.wp-block-image img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.modal-img {
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal.appear {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 3.5em;
+    cursor: pointer;
+}
+
+/* Modal END */
 
 @media (max-width: 770px) {
     /* NAV menu */
