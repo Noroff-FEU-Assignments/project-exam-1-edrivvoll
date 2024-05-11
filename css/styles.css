@@ -13,6 +13,10 @@
     src: url(../Fonts/BaiJamjuree-Bold.ttf);
 }
 
+:root {
+    --header-footer-color: darkgray;
+
+}
 
 .message {
     padding: 1rem;
@@ -48,7 +52,7 @@ body {
 }
 
 header {
-    background-color: darkgray;
+    background-color: var(--header-footer-color);
     height: 5rem;
     display: inline-block;
     width: 100%;
@@ -105,7 +109,7 @@ nav,
     top: 0;
     width: 50%;
     height: 100%;
-    background-color: darkgray;
+    background-color: var(--header-footer-color);
 
     border-bottom: solid 2px #6de652;
 }
@@ -181,15 +185,15 @@ h1 span {
 
 
 footer {
-    background-color: rgb(108, 108, 203);
+    background-color: var(--header-footer-color);
     text-align: center;
     bottom: 0px;
-    padding: 20px;
+    padding: 15px;
     position: relative;
+    font-family: "Bai Jamjuree bold";
+    font-size: 1.2em;
 
 }
-
-
 
 
 
@@ -611,8 +615,9 @@ img {
     color: white;
     z-index: 1;
     overflow: auto;
-    opacity: 0;
-    pointer-events: none;
+
+    display: none;
+
 }
 
 .modal-content {
@@ -627,10 +632,10 @@ img {
     max-width: 700px;
 }
 
-.modal.appear {
+/* .modal.appear {
     opacity: 1;
     pointer-events: all;
-}
+} */
 
 .close {
     position: absolute;
@@ -641,6 +646,14 @@ img {
 }
 
 /* Modal END */
+
+/* ERROR */
+.error {
+    border: 2px solid red;
+    padding: 1rem;
+    color: red;
+    background: rgba(214, 71, 71, 0.1);
+}
 
 @media (max-width: 770px) {
     /* NAV menu */
@@ -653,7 +666,7 @@ img {
         top: 5em;
         width: 30%;
         height: 400%;
-        background-color: darkgray;
+        background-color: var(--header-footer-color);
         border-radius: 0 0 0 15px;
         border-bottom: solid 2px #6de652;
         border-left: solid 2px #6de652;
@@ -710,19 +723,19 @@ img {
 
     .item {
         margin: 20px auto;
-        max-width: 66%;
+        max-width: 80%;
 
     }
 
     /* Carousel edit END */
 
     .main-info {
-        max-width: 70%;
+        max-width: 80%;
         font-size: 1.1em;
     }
 
     .blog-spesific-container {
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .wp-block-image img {

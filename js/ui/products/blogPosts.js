@@ -1,5 +1,9 @@
 import { base_url } from "../../constants/api.js";
 
+function displayError(message = "Unknown ERROR!"){
+    return `<div class="error">${message}</div>`
+};
+
 let page = 1;
 
 const container = document.querySelector(".blog-container");
@@ -7,6 +11,9 @@ const viewMorePosts = document.querySelector(".view-more-posts");
 container.innerHTML="";
 
 export async function blogPost(){
+    try{
+
+    
     const postPerPage = 10;
     const response = await fetch(`${base_url}?_embed&per_page=${postPerPage}&page=${page}`);
     const json = await response.json();
@@ -34,9 +41,13 @@ export async function blogPost(){
         </a>
         `;
     });
-        
+            
     page++;
-    
+    }
+catch(error){
+    container.innerHTML = displayError();
+}
+
 }; 
 blogPost();
 

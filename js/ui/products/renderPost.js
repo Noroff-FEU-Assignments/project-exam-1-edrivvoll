@@ -1,6 +1,13 @@
 import { base_url } from "../../constants/api.js";
 
+function displayError(message = "Unknown ERROR!"){
+    return `<div class="error">${message}</div>`
+};
+
 export async function renderPost(){
+    try{
+
+    
     const response = await fetch(base_url + "?_embed&per_page=100");
     const json = await response.json();
     
@@ -24,7 +31,9 @@ export async function renderPost(){
         `;
         
     });
-        
-        
+    }
+        catch(error){
+            card.innerHTML = displayError();
+        }
 
  };

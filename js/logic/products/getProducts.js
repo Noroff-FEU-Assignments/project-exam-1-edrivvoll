@@ -8,8 +8,7 @@ export async function getProducts() {
         renderProducts(products);
         
     } catch(error) {
-        // console.error(error);
-        // TODO: display error
+       
         displayMessage("#container", error, "error")
     }
 }
