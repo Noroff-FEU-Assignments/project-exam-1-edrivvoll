@@ -16,11 +16,8 @@ async function getBlogPost(){
     const json = await response.json();
     document.title = "Cake Haven | " + json.title.rendered;
     let jsonEmbed = url + "?_embed";
-    console.log(jsonEmbed);
     let featImg =  json.featured_media_src_url;
-    console.log(featImg);
-
-
+   
     blogPost.innerHTML = "";
     blogPost.innerHTML = `
         <div class="blog_featured_img" style="background-image: url(${featImg})"></div>

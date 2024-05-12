@@ -15,12 +15,10 @@
 
 :root {
     --header-footer-color: darkgray;
-
 }
 
 .message {
     padding: 1rem;
-
 }
 
 .message.error {
@@ -83,8 +81,6 @@ header {
     font-weight: 900;
 }
 
-
-
 .fa-bars {
     float: right;
     top: 50px;
@@ -98,8 +94,6 @@ header {
 }
 
 /* NAV element */
-
-
 nav,
 #nav_checkbox {
     display: block;
@@ -110,7 +104,6 @@ nav,
     width: 50%;
     height: 100%;
     background-color: var(--header-footer-color);
-
     border-bottom: solid 2px #6de652;
 }
 
@@ -135,8 +128,6 @@ nav li {
     font-size: 1.5em;
 }
 
-
-
 nav li a {
     font-family: "Bai Jamjuree bold";
     color: #1b1919;
@@ -147,13 +138,9 @@ nav ul {
     display: flex;
 }
 
-
 #nav_checkbox:checked~nav {
     display: inline-block;
 }
-
-
-
 
 /* NAV element END */
 
@@ -173,16 +160,13 @@ nav ul {
 
 .hero-pic h1 {
     padding-left: 10%;
-
 }
 
 h1 span {
     font-family: "Scriptina_pro";
     text-decoration-line: underline;
     font-size: 2em;
-
 }
-
 
 footer {
     background-color: var(--header-footer-color);
@@ -193,8 +177,6 @@ footer {
     font-family: "Bai Jamjuree bold";
     font-size: 1.2em;
 }
-
-
 
 .slider-container {
     position: relative;
@@ -218,8 +200,6 @@ footer {
     margin: 0 5px;
     background-position: center;
     background-size: cover;
-
-
 }
 
 .item a {
@@ -242,8 +222,6 @@ footer {
     border-radius: 10px;
     border: solid 2px rgb(155, 128, 160);
 }
-
-
 
 .prev-button,
 .next-button {
@@ -276,7 +254,6 @@ footer {
 .hover {
     height: 200px;
     margin: 0 auto;
-
     border-radius: 10px;
     overflow: hidden;
 }
@@ -290,10 +267,7 @@ footer {
     margin: 0 auto;
     padding-top: 5px;
     text-align: left;
-
 }
-
-
 
 .hover:hover {
     background-color: black;
@@ -303,8 +277,6 @@ footer {
 
 .hover p:hover {
     opacity: 1;
-
-
 }
 
 .blog_featured_img {
@@ -339,7 +311,6 @@ footer {
 
 .blog-container {
     padding: 0px;
-
 }
 
 .blog-container a {
@@ -353,7 +324,6 @@ footer {
     padding: 30px;
     margin: 30px auto;
     background-color: #d0d1d0;
-
 }
 
 .card-img {
@@ -411,8 +381,6 @@ footer {
     margin-bottom: 50px;
 }
 
-
-
 #contact-form input,
 #contact-form label,
 #contact-form textarea,
@@ -432,7 +400,6 @@ footer {
     text-decoration: none;
     color: black;
     font-size: 1.5em;
-
 }
 
 .contact-submit:hover,
@@ -477,7 +444,6 @@ footer {
 /* Loading wheel */
 
 .lds-roller {
-    /* change color here */
     color: #1c4c5b
 }
 
@@ -492,7 +458,6 @@ footer {
     position: relative;
     width: 80px;
     height: 80px;
-
 }
 
 .lds-roller div {
@@ -603,7 +568,6 @@ img {
 .wp-block-image img:hover {
     transform: scale(1.03);
     cursor: pointer;
-
 }
 
 /* Modal */
@@ -618,9 +582,7 @@ img {
     color: white;
     z-index: 1;
     overflow: auto;
-
     display: none;
-
 }
 
 .modal-content {
@@ -634,11 +596,6 @@ img {
     width: 80%;
     max-width: 700px;
 }
-
-/* .modal.appear {
-    opacity: 1;
-    pointer-events: all;
-} */
 
 .close {
     position: absolute;
@@ -720,14 +677,11 @@ img {
 
     .slider {
         display: block;
-
-
     }
 
     .item {
         margin: 20px auto;
         max-width: 80%;
-
     }
 
     /* Carousel edit END */

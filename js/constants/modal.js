@@ -1,5 +1,4 @@
 
-
 const images = document.querySelectorAll("figure img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");
@@ -10,7 +9,7 @@ document.querySelectorAll("figure img").forEach(image => {
     image.addEventListener("click", (click) => {       
         modalImg.src = image.src;
         modal.style.display = "block";
-        /* click.stopPropagation(); */
+        click.stopPropagation();
     });
 });
 
@@ -24,3 +23,6 @@ document.addEventListener("click", (click) => {
         modal.style.display = "none"; 
     }
 });
+
+
+

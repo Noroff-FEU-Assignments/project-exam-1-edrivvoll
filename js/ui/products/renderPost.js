@@ -13,7 +13,7 @@ export async function renderPost(){
     
     const card = document.querySelector(".slider");
     const item = document.querySelector(".item");
-    console.log(json.length)
+    
     card.innerHTML = "";
     
     json.forEach(json => {
